@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<base href="/js-shopping-cart/">
+</head>
+<body>
+
+<h3>商品一覧</h3>
+
+<div id="items">
+
+<div class="item" data-id="apple" data-price="100">
+<img src="/js-shopping-cart/apple.jpg" width=120 height=90>
+<div>&yen;<span class="price">100</span><span class="pieces"></span></div>
+<form>数量<input type="number" style="width:2em;" class="kazu" min="1" value="1"></form>
+<button type="button">add Cart</button>
+</div>
+
+<div class="item" data-id="orange" data-price="200">
+<img src="/js-shopping-cart/orange.jpg" width=120 height=90>
+<div>&yen;<span class="price">200</span><span class="pieces"></span></div>
+<form>数量<input type="number" style="width:2em;" class="kazu" min="1" value="1"></form>
+<button type="button">add Cart</button>
+</div>
+
+<div class="item" data-id="grape" data-price="300">
+<img src="/js-shopping-cart/grape.jpg" width=120 height=90>
+<div>&yen;<span class="price">300</span><span class="pieces"></span></div>
+<form>数量<input type="number" style="width:2em;" class="kazu" min="1" value="1"></form>
+<button type="button">add Cart</button>
+</div>
+
+</div>
+
+<h3>カート　総合計：<span id="total">0</span></h3>
+<div id="cart"></div>
+
+<style>
+#items, #cart{ border:1px solid #ccc; margin:1em; overflow:hidden;}
+.item{ float:left; padding:5px; margin:1em; border:1px solid #ccc; width:120px; text-align:center; }
+</style>
+
+<script src="/js-shopping-cart/jQuery.js"></script>
+<script src="/js-shopping-cart/jquery-ui.js"></script>
+<script src="cart.js"></script>
+</body>
+
+</html>
